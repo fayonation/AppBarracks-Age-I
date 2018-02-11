@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Zelda Wallpaper
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="body">
+    <!--<img src="assets/imgs/1.jpg" alt="image1">-->
+    
+    <ion-slides>
+        <ion-slide *ngFor="let image of ImageArray">
+            <img src="{{image.image}}" alt="slides">
+
+        </ion-slide>
+        
+      </ion-slides>
+    
+  </div>
+</ion-content>
